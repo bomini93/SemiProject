@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+
+  <!-- 필터 클래스 등록 -->
+  <filter>
+  	<filter-name>LoginFilter</filter-name>
+  	<filter-class>common.LoginCheckFilter</filter-class>
+  </filter>
+  
+  <!-- 필터 클래스가 동작하게 될 url-pattern 매핑 -->
+  <filter-mapping>
+  	<filter-name>LoginFilter</filter-name>
+  	<url-pattern>/*</url-pattern> <!-- 모든 url -->
+  </filter-mapping>
+  
+  
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
